@@ -10,6 +10,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "class-variance-authority": "^0.2.4",
     "eslint-config-prettier": "^8.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
