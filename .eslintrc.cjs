@@ -8,6 +8,7 @@ module.exports = {
     'standard-with-typescript',
     'plugin:react/jsx-runtime',
     'prettier',
+    'plugin:storybook/recommended',
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -16,7 +17,12 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
-    'no-console': ['error', { allow: ['error'] }],
+    'no-console': [
+      'error',
+      {
+        allow: ['error'],
+      },
+    ],
     // React:
     'react/self-closing-comp': 'warn',
     'react/jsx-sort-props': [
@@ -27,7 +33,6 @@ module.exports = {
         reservedFirst: true,
       },
     ],
-
     // Imports:
     'import/newline-after-import': 'error',
     'import/prefer-default-export': 'warn',
@@ -41,10 +46,10 @@ module.exports = {
         },
       },
     ],
-
     // TS
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',
+    '@typescript-eslint/consistent-type-assertions': 'off',
   },
   overrides: [
     {
