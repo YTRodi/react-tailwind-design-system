@@ -1,32 +1,50 @@
-import { useState } from 'react';
-
-import reactLogo from './assets/react.svg';
+import { BodyText } from './components/atoms';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" rel="noreferrer" target="_blank">
-          <img alt="Vite logo" className="logo" src="/vite.svg" />
-        </a>
-        <a href="https://reactjs.org" rel="noreferrer" target="_blank">
-          <img alt="React logo" className="logo react" src={reactLogo} />
-        </a>
+      <h1>Headline 1</h1>
+      <h2>Headline 2</h2>
+      <h3>Headline 3</h3>
+      <h4>Headline 4</h4>
+      <h5>Headline 5</h5>
+
+      <div className="flex gap-6">
+        <div>
+          <BodyText size="lg">Font normal</BodyText>
+          <BodyText>Font normal</BodyText>
+          <BodyText size="sm">Font normal</BodyText>
+          <BodyText size="xs">Font normal</BodyText>
+        </div>
+
+        <div>
+          <BodyText size="lg" weight="semi">
+            Font semibold
+          </BodyText>
+          <BodyText weight="semi">Font semibold</BodyText>
+          <BodyText size="sm" weight="semi">
+            Font semibold
+          </BodyText>
+          <BodyText size="xs" weight="semi">
+            Font semibold
+          </BodyText>
+        </div>
+
+        <div>
+          <BodyText capitalized size="lg" weight="semi">
+            Semibold capitalized
+          </BodyText>
+          <BodyText capitalized weight="semi">
+            Semibold capitalized
+          </BodyText>
+          <BodyText capitalized size="sm" weight="semi">
+            Semibold capitalized
+          </BodyText>
+          <BodyText capitalized size="xs" weight="semi">
+            Semibold capitalized
+          </BodyText>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
   );
 }

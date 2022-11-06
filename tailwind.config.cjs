@@ -27,7 +27,11 @@ module.exports = {
         50: colors.teal['50'],
       },
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ['Inter'],
+      },
+    },
   },
   plugins: [],
 };
