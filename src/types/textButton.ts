@@ -1,6 +1,6 @@
 import { VariantProps } from 'class-variance-authority';
 
-import { textButtonStyles } from '~/styles';
+import { textButtonStyles } from '../styles';
 
 type TextButtonStylesType = typeof textButtonStyles;
 type TextButtonVariantProps = VariantProps<TextButtonStylesType>;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { HeroIcon } from '~/types/icon';
+import { HeroIcon } from '../../../types';
 
 interface Props {
   icon: React.ReactElement<HeroIcon>;

@@ -1,7 +1,7 @@
 import { VariantProps } from 'class-variance-authority';
 import React from 'react';
 
-import { buttonStyles } from '~/styles';
+import { buttonStyles } from '../styles';
 
 type ButtonStylesType = typeof buttonStyles;
 type ButtonVariantProps = VariantProps<ButtonStylesType>;
