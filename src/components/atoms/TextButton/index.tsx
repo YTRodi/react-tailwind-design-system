@@ -1,19 +1,19 @@
-import { buttonStyles } from '../../../styles';
+import { textButtonStyles } from '../../../styles';
 import type {
-  ButtonVariantProps,
   HeroIconReactElement,
   OmittedButtonProps,
+  TextButtonVariantProps,
 } from '../../../types';
 import Icon from '../Icon';
 import Spinner from '../Spinner';
 
-export interface Props extends OmittedButtonProps, ButtonVariantProps {
-  label?: string;
+export interface Props extends OmittedButtonProps, TextButtonVariantProps {
+  label: string;
   leftIcon?: HeroIconReactElement;
   rightIcon?: HeroIconReactElement;
 }
 
-const Button = ({
+const TextButton = ({
   label,
   colorScheme,
   size,
@@ -23,15 +23,15 @@ const Button = ({
   rightIcon,
   ...rest
 }: Props) => {
-  const buttonStylesProps = { colorScheme, size, loading, disabled };
+  const textButtonStylesProps = { colorScheme, size, loading, disabled };
 
   return (
-    <button className={buttonStyles(buttonStylesProps)} {...rest}>
-      {loading ? null : leftIcon ? <Icon icon={leftIcon} /> : null}
+    <button className={textButtonStyles(textButtonStylesProps)} {...rest}>
+      {leftIcon ? <Icon icon={leftIcon} /> : null}
       {label}
       {loading ? <Spinner /> : rightIcon ? <Icon icon={rightIcon} /> : null}
     </button>
   );
 };
 
-export default Button;
+export default TextButton;
