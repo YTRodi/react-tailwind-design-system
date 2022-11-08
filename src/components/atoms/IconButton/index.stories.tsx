@@ -1,11 +1,11 @@
 import { Cog6ToothIcon } from '@heroicons/react/20/solid';
 import type { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import IconicButton from './';
+import IconButton from './';
 
 export default {
-  title: 'IconicButton',
-  component: IconicButton,
+  title: 'IconButton',
+  component: IconButton,
   args: {
     icon: <Cog6ToothIcon />,
   },
@@ -33,10 +33,10 @@ export default {
       defaultValue: false,
     },
   },
-} as ComponentMeta<typeof IconicButton>;
+} as ComponentMeta<typeof IconButton>;
 
-const Template: ComponentStory<typeof IconicButton> = (args) => (
-  <IconicButton {...args} />
+const Template: ComponentStory<typeof IconButton> = (args) => (
+  <IconButton {...args} />
 );
 
 export const Small = Template.bind({});

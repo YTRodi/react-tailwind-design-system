@@ -1,7 +1,7 @@
 import { Cog6ToothIcon } from '@heroicons/react/20/solid';
 
 import { Button, TextButton } from './components';
-import IconicButton from './components/atoms/IconicButton';
+import IconButton from './components/atoms/IconButton';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         leftIcon={<Cog6ToothIcon />}
         rightIcon={<Cog6ToothIcon />}
       />
-      <IconicButton icon={<Cog6ToothIcon />} />
+      <IconButton icon={<Cog6ToothIcon />} />
       <TextButton disabled label="HolaMundo" />
     </div>
   );

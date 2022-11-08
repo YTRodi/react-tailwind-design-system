@@ -9,7 +9,7 @@ interface Props extends OmittedProps {
   icon: HeroIconReactElement;
 }
 
-const IconicButton = ({
+const IconButton = ({
   colorScheme,
   size,
   loading,
@@ -26,6 +26,6 @@ const IconicButton = ({
   );
 };
 
-export default IconicButton;
+export default IconButton;
 
 // TODO: tooltip
