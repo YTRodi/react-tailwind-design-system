@@ -1,7 +1,6 @@
 import { Cog6ToothIcon } from '@heroicons/react/20/solid';
 
-import { Button, TextButton } from './components';
-import IconButton from './components/atoms/IconButton';
+import { Button, TextButton, IconButton } from './components';
 
 function App() {
   return (
