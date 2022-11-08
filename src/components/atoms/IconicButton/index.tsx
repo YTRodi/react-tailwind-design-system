@@ -10,15 +10,14 @@ interface Props extends OmittedProps {
 }
 
 const IconicButton = ({
-  appearance = 'solid',
-  color,
+  colorScheme,
   size,
-  disabled,
   loading,
+  disabled,
   icon,
   ...rest
 }: Props) => {
-  const buttonStylesProps = { appearance, color, size, disabled, loading };
+  const buttonStylesProps = { colorScheme, size, loading, disabled };
 
   return (
     <button className={buttonStyles(buttonStylesProps)} {...rest}>
@@ -28,3 +27,5 @@ const IconicButton = ({
 };
 
 export default IconicButton;
+
+// TODO: tooltip

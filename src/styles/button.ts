@@ -14,55 +14,79 @@ const DEFAULT_BUTTON_STYLES = [
 ];
 const buttonStyles = cva(DEFAULT_BUTTON_STYLES, {
   variants: {
-    appearance: {
-      solid: [],
-      text: [],
-    },
-    color: {
+    colorScheme: {
       primary: [
         'bg-brand-600',
         'text-white',
         'hover:bg-brand-700',
         'focus:outline-brand-700',
       ],
-      secondary: [],
-      tertiary: [],
+      secondary: [
+        'bg-neutral-100',
+        'hover:bg-neutral-200',
+        'focus:outline-neutral-200',
+      ],
+      tertiary: [
+        'bg-transparent',
+        'text-neutral-600',
+        'hover:bg-neutral-100',
+        'focus:outline-neutral-100',
+      ],
     },
     size: {
-      small: ['py-2', 'px-3'],
       medium: ['py-2.5', 'px-4'],
       big: ['p-4'],
-    },
-    disabled: {
-      true: ['cursor-not-allowed', 'focus:outline-[0px]'],
+      small: ['py-2', 'px-3', 'text-sm'],
     },
     loading: {
       true: ['cursor-wait', 'focus:outline-[0px]'],
     },
+    disabled: {
+      true: ['cursor-not-allowed', 'focus:outline-[0px]'],
+    },
   },
   defaultVariants: {
-    appearance: 'solid',
-    color: 'primary',
+    colorScheme: 'primary',
     size: 'medium',
-    disabled: false,
     loading: false,
+    disabled: false,
   },
   compoundVariants: [
+    // Loading
     {
-      color: 'primary',
+      colorScheme: 'primary',
       loading: true,
+      disabled: false,
       class: ['bg-brand-400', 'hover:bg-brand-400'],
     },
     {
-      color: 'primary',
+      colorScheme: 'secondary',
+      loading: true,
+      disabled: false,
+      class: ['text-neutral-600', 'bg-neutral-100', 'hover:bg-neutral-100'],
+    },
+    {
+      colorScheme: 'tertiary',
+      loading: true,
+      disabled: false,
+      class: ['text-neutral-500', 'bg-transparent', 'hover:bg-transparent'],
+    },
+
+    // Disabled
+    {
+      colorScheme: 'primary',
       disabled: true,
       class: ['bg-neutral-100', 'text-neutral-400', 'hover:bg-neutral-100'],
     },
     {
-      // TODO: aquí puedo diferenciar si la "appearance" es "text" o si es "solid" (como tenia antes!!!)
-      // TODO: el font size varia dependiendo si es solid o text
-      size: 'small',
-      class: ['text-sm'],
+      colorScheme: 'secondary',
+      disabled: true,
+      class: ['bg-neutral-100', 'text-neutral-400', 'hover:bg-neutral-100'],
+    },
+    {
+      colorScheme: 'tertiary',
+      disabled: true,
+      class: ['bg-transparent', 'text-neutral-400', 'hover:bg-transparent'],
     },
   ],
 });

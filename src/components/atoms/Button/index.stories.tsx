@@ -11,14 +11,7 @@ export default {
       type: 'string',
       defaultValue: 'Button',
     },
-    appearance: {
-      control: {
-        type: 'select',
-        options: ['solid', 'text'],
-      },
-      defaultValue: 'solid',
-    },
-    color: {
+    colorScheme: {
       control: {
         type: 'select',
         options: ['primary', 'secondary', 'tertiary'],
@@ -28,15 +21,15 @@ export default {
     size: {
       control: {
         type: 'select',
-        options: ['small', 'medium', 'big'],
+        options: ['big', 'medium', 'small'],
       },
       defaultValue: 'medium',
     },
-    disabled: {
+    loading: {
       type: 'boolean',
       defaultValue: false,
     },
-    loading: {
+    disabled: {
       type: 'boolean',
       defaultValue: false,
     },
@@ -60,16 +53,16 @@ Big.args = {
   size: 'big',
 };
 
-export const Loading = Template.bind({});
-Loading.args = {
-  label: 'Loading',
-  loading: true,
-};
-
 export const Disabled = Template.bind({});
 Disabled.args = {
   label: 'Disabled',
   disabled: true,
+};
+
+export const Loading = Template.bind({});
+Loading.args = {
+  label: 'Loading',
+  loading: true,
 };
 
 export const LeftIcon = Template.bind({});

@@ -10,14 +10,7 @@ export default {
     icon: <Cog6ToothIcon />,
   },
   argTypes: {
-    appearance: {
-      control: {
-        type: 'select',
-        options: ['solid', 'text'],
-      },
-      defaultValue: 'solid',
-    },
-    color: {
+    colorScheme: {
       control: {
         type: 'select',
         options: ['primary', 'secondary', 'tertiary'],
@@ -27,15 +20,15 @@ export default {
     size: {
       control: {
         type: 'select',
-        options: ['small', 'medium', 'big'],
+        options: ['big', 'medium', 'small'],
       },
       defaultValue: 'medium',
     },
-    disabled: {
+    loading: {
       type: 'boolean',
       defaultValue: false,
     },
-    loading: {
+    disabled: {
       type: 'boolean',
       defaultValue: false,
     },
@@ -61,12 +54,12 @@ Big.args = {
   size: 'big',
 };
 
-export const Loading = Template.bind({});
-Loading.args = {
-  loading: true,
-};
-
 export const Disabled = Template.bind({});
 Disabled.args = {
   disabled: true,
+};
+
+export const Loading = Template.bind({});
+Loading.args = {
+  loading: true,
 };

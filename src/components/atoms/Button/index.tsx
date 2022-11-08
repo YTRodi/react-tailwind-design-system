@@ -17,18 +17,15 @@ export interface Props extends OmittedButtonProps, ButtonVariantProps {
 
 const Button = ({
   label,
-  appearance = 'solid',
-  color,
+  colorScheme,
   size,
-  disabled,
   loading,
+  disabled,
   leftIcon,
   rightIcon,
   ...rest
 }: Props) => {
-  const buttonStylesProps = { appearance, color, size, disabled, loading };
-
-  // TODO: (feature) si no hay label y solo vienen por props iconLeft o iconRight mostrar un <IconicButton />
+  const buttonStylesProps = { colorScheme, size, loading, disabled };
 
   return (
     <button className={buttonStyles(buttonStylesProps)} {...rest}>
