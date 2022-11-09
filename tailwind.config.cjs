@@ -31,6 +31,11 @@ module.exports = {
       fontFamily: {
         inter: ['Inter'],
       },
+      keyframes: {
+        // slideDownAndFade
+        // https://tailwindcss.com/docs/animation#prefers-reduced-motion
+        // https://tailwindcss.com/docs/animation#customizing-your-theme
+      },
     },
   },
   plugins: [],

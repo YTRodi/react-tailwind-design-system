@@ -1,0 +1,23 @@
+@keyframes slideDownAndFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+}
+
+.content {
+  /* border: 1px solid red; */
+  /* @apply border- */
+}
+
+// TODO: me quedé acá animando el tooltip cuando aparece y cuando se va!!!!!!
+// TODO: me quedé acá animando el tooltip cuando aparece y cuando se va!!!!!!
+// TODO: me quedé acá animando el tooltip cuando aparece y cuando se va!!!!!!
+// TODO: me quedé acá animando el tooltip cuando aparece y cuando se va!!!!!!
+// TODO: me quedé acá animando el tooltip cuando aparece y cuando se va!!!!!!
+// TODO: me quedé acá animando el tooltip cuando aparece y cuando se va!!!!!!
+/* https://codesandbox.io/s/optimistic-resonance-1dq29u?file=/App.js:1156-1651 */

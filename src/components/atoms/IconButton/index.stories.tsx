@@ -1,6 +1,8 @@
 import { Cog6ToothIcon } from '@heroicons/react/20/solid';
 import type { ComponentStory, ComponentMeta } from '@storybook/react';
 
+import TooltipProvider from '../../../context/TooltipProvider';
+
 import IconButton from './';
 
 export default {
@@ -36,7 +38,9 @@ export default {
 } as ComponentMeta<typeof IconButton>;
 
 const Template: ComponentStory<typeof IconButton> = (args) => (
-  <IconButton {...args} />
+  <TooltipProvider>
+    <IconButton {...args} />
+  </TooltipProvider>
 );
 
 export const Small = Template.bind({});
