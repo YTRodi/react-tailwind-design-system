@@ -7,6 +7,7 @@ const DEFAULT_INPUT_STYLES = [
   'rounded-lg',
   'font-inter',
   'text-neutral-900',
+  'text-base',
   'placeholder:text-neutral-400',
   'hover:border-neutral-500',
   'outline',
@@ -25,6 +26,12 @@ const inputStyles = cva(DEFAULT_INPUT_STYLES, {
     },
     isInvalid: {
       true: ['border-rose-400'],
+    },
+    hasLeftIcon: {
+      true: 'pl-[38px]',
+    },
+    hasRightIcon: {
+      true: 'pr-[38px]',
     },
   },
 });

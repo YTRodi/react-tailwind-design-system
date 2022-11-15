@@ -1,3 +1,4 @@
+import { PlusCircleIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
 import type { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import Input from './';
@@ -38,4 +39,20 @@ Big.args = {
 export const Invalid = Template.bind({});
 Invalid.args = {
   isInvalid: true,
+};
+
+export const LeftIcon = Template.bind({});
+LeftIcon.args = {
+  leftIcon: <PlusCircleIcon />,
+};
+
+export const RightIcon = Template.bind({});
+RightIcon.args = {
+  rightIcon: <ChevronRightIcon />,
+};
+
+export const LeftAndRightIcon = Template.bind({});
+LeftAndRightIcon.args = {
+  leftIcon: <PlusCircleIcon />,
+  rightIcon: <ChevronRightIcon />,
 };
