@@ -14,10 +14,6 @@ export default {
       },
       defaultValue: 'medium',
     },
-    disabled: {
-      type: 'boolean',
-      defaultValue: false,
-    },
   },
 } as ComponentMeta<typeof Input>;
 

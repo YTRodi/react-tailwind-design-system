@@ -1,3 +1,4 @@
+import { DEFAULT_PLACEHOLDER } from '../../../constants';
 import { inputStyles } from '../../../styles';
 import type {
   HeroIconReactElement,
@@ -10,8 +11,6 @@ interface Props extends OmittedInputProps, InputVariantProps {
   leftIcon?: HeroIconReactElement;
   rightIcon?: HeroIconReactElement;
 }
-
-const DEFAULT_PLACEHOLDER = 'Placeholder';
 
 // TODO: base input -> TextInput, Dropdown, Stepper, Phone number
 const Input = ({

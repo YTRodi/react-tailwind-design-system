@@ -5,4 +5,5 @@ export { default as Icon } from './Icon';
 export { default as TextButton } from './TextButton';
 export { default as IconButton } from './IconButton';
 export { default as Input } from './Input';
+export { default as Textarea } from './Textarea';
 export * from './Tooltip';
