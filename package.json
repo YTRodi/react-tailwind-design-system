@@ -12,6 +12,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.4",
     "@heroicons/react": "^2.0.13",
     "@radix-ui/react-tooltip": "^1.0.2",
     "class-variance-authority": "^0.2.4",

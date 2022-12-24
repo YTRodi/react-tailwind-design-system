@@ -1,6 +1,12 @@
 import { Cog6ToothIcon } from '@heroicons/react/20/solid';
 
-import { Button, TextButton, IconButton, Textarea } from './components';
+import {
+  Button,
+  TextButton,
+  IconButton,
+  Textarea,
+  Dropdown,
+} from './components';
 import AppProviders from './context';
 
 function App() {
@@ -17,6 +23,7 @@ function App() {
         <IconButton icon={<Cog6ToothIcon />} />
         <TextButton disabled label="HolaMundo" />
         <Textarea characterLimit={10} />
+        <Dropdown />
       </div>
     </AppProviders>
   );

@@ -34,6 +34,9 @@ const inputStyles = cva(DEFAULT_INPUT_STYLES, {
       true: 'pr-[38px]',
     },
   },
+  defaultVariants: {
+    size: 'medium',
+  },
 });
 
 export { DEFAULT_INPUT_STYLES, inputStyles };

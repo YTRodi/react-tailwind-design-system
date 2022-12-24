@@ -7,7 +7,7 @@ import type {
 } from '../../../types';
 import Icon from '../Icon';
 
-interface Props extends OmittedInputProps, InputVariantProps {
+export interface Props extends OmittedInputProps, InputVariantProps {
   leftIcon?: HeroIconReactElement;
   rightIcon?: HeroIconReactElement;
 }
